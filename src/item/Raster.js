@@ -284,7 +284,7 @@ var Raster = Item.extend(/** @lends Raster# */{
             // A Image object
             this._image = image;
             this._canvas = null;
-            this._loaded = !!(image && image.src && image.complete);
+            this._loaded = !!(image && image.src && image.complete && (image.naturalWidth > 0 || image.width > 0));
         }
         // Both canvas and image have width / height attributes. Due to IE,
         // naturalWidth / Height needs to be checked for a swell, because it
