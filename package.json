@@ -15,8 +15,6 @@
   ],
   "main": "dist/paper-full.js",
   "scripts": {
-    "precommit": "gulp jshint --branch develop",
-    "prepush": "gulp test --branch develop",
     "build": "gulp build",
     "dist": "gulp dist",
     "zip": "gulp zip",
